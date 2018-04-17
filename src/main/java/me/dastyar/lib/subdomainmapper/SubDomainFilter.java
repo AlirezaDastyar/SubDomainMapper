@@ -26,9 +26,9 @@ public interface SubDomainFilter {
      * Store classes that are annotated with <code>@SubDomain()</code>
      */
     static Map<String, Class<?>> classes = new HashMap<>();
-
+ 
     /**
-     * <p>
+     * <p> 
      * Filter method forwards the request that has a RequestURL with
      * <i>SubDomain</i>
      * to the servlet that is annotated with <code>@SubDomain</code> and has

@@ -5,7 +5,7 @@ import java.lang.annotation.Retention;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import java.lang.annotation.Target;
 
-/**</p>
+/**</p> 
  * The {@code SubDomain} interface represent annotation
  * that allow to map a <i>SubDomain</i> to a servlet.</p>
  * <p>
