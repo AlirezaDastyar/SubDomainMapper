@@ -15,7 +15,7 @@ import org.reflections.Reflections;
 /**
  * <p>
  * The {@code SubDomainFilter} interface represent SubDomain mapping
- * functionality by filter method</p>
+ * functionality by filter method.</p>
  *
  * @author Alireza Dastyar
  * @since V0.1
