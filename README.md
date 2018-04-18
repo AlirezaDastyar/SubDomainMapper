@@ -18,7 +18,7 @@ public class MyServlet extends HttpServlet{
 Name parameter in `@SubDomain()` specify the subdomain name that you want to map to this servlet.  
 For above example the `http://sub.example.com` will be mapped to the servlet.
 ### 3.Call `SubDomainFileter.filter()` in a filter class
-parameter of `SubDomainFileter.filter(request,response,domainParts)`;  
+Parameter of `SubDomainFileter.filter(request,response,domainParts)`;  
 `request` is the same as request `ServletRequest` in `javax.servlet.Filter#doFilter()`.  
 `response` is the same as request `ServletResponse` in `javax.servlet.Filter#doFilter()`.  
 `domainParts` indicates parts of splitted (on dot character) of domin name without `www`.  
