@@ -36,17 +36,18 @@ public interface SubDomainFilter {
      * Example:
      * <blockquote><pre>
      *
+     *   <code>@WebFilter(filterName = "MyFilter", urlPatterns = {"/*"})</code>
      *   public class MyFilter extends Filter{
      *        ....
      *        public doFilter(ServletRequest request, ServletResponse response,FilterChain chain){
-     *              //beforeFiltering stuff
+     *              //beforeFiltering 
      *              // for http://www.example.com  domainParts is 2 [ example, com]
      *              // for http://www.example.co.uk  domainParts is 3 [example, co, uk]
      *              boolean sub=SubDomainFilter.filter(request,response,2);
      *              if(!sub){
      *                  //If no SubDomain mapping happened
      *              }
-     *              //other stuff
+     *              //other filtering code
      *        }
      *   }
      * </pre></blockquote>
@@ -61,7 +62,7 @@ public interface SubDomainFilter {
      * javax.servlet.Filter#doFilter()<br/>
      * @param response is the same as request (ServletRequest) in
      * javax.servlet.Filter#doFilter()<br/>
-     * @param domainParts is very important field and indicates parts of splited
+     * @param domainParts is very important field and indicates parts of splitted
      * (on dot character) of domin name without <i>www</i><br/>
      * @return a boolean which indicates that any mapping happened or not
      * @throws ServletException in failure on getRequestDispatcher().forward()
