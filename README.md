@@ -23,7 +23,7 @@ Parameter of `SubDomainFileter.filter(request,response,domainParts)`;
 `request` is the same as request `ServletRequest` in `javax.servlet.Filter#doFilter()`.  
 `response` is the same as request `ServletResponse` in `javax.servlet.Filter#doFilter()`.  
 `domainParts` indicates parts of splitted (on dot character) of domin name without `www`.  
-For example:
+ For example:
 ```java
 @WebFilter(filterName = "MyFilter", urlPatterns = {"/*"})
 public class MyFilter extends Filter{
@@ -39,7 +39,6 @@ public class MyFilter extends Filter{
     }
 }
 ```
-and its done.
 ## Dependencies
 ### Reflections
 Maven repository:
