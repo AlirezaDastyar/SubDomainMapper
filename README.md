@@ -49,8 +49,8 @@ Maven repository:
         <version>0.9.11</version>
 </dependency>
 ```
-## Requierments
-This library don't create a subdomain for you.  
+## Additional notes
+**This library do not create a subdomain for you.**  
 If you use hosting control panels go ahead and add a subdomain,  
 if don't you have to do it manually.
 ### Add a subdomin manually
