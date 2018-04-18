@@ -1,11 +1,12 @@
-# What is it?
+# SubDomainMapper
+## What is it?
 SubDomainMapper is a simple library which allow to map a subdomain to a java servlet.
 it is answer *w tomap a subdomain to a servlet**.
-#How to use it?
-##1.Add this project as jar file to your dependencies (or lib) directory
+## How to use it?
+### 1.Add this project as jar file to your dependencies (or lib) directory
 Download: [SubDomainMapper.jar](https://github.com/AlirezaDastyar/SubDomainMpper/blob/master/jar/SubDomainMapper-0.1-SNAPSHOT.jar?raw=true)
 or clone and compile the project. 
-##2.annotate the your `HttpServlet` class with `@SubDomain()`. 
+### 2.annotate the your `HttpServlet` class with `@SubDomain()`. 
 Example:
 ```java
 @SubDomain(name = "sub")
@@ -16,7 +17,7 @@ public class MyServlet extends HttpServlet{
 ```
 Name parameter in `@SubDomain()` specify the subdomain name that you want to map to this servlet.
 For above example the `http://sub.example.com` will be mapped to the servlet.
-##3.call `SubDomainFileter.filter()` in a filter class
+### 3.call `SubDomainFileter.filter()` in a filter class
 parameter of `SubDomainFileter.filter(request,response,domainParts)`;
 `request` is the same as request `ServletRequest` in `javax.servlet.Filter#doFilter()`.
 `response` is the same as request `ServletResponse` in `javax.servlet.Filter#doFilter()`.
@@ -38,8 +39,8 @@ public class MyFilter extends Filter{
 }
 ```
 and its done.
-#Dependencies
-##Reflections
+## Dependencies
+### Reflections
 Maven repository:
 ```xml
 <dependency>
@@ -48,11 +49,11 @@ Maven repository:
         <version>0.9.11</version>
 </dependency>
 ```
-#Requierments
+## Requierments
 This library don't create a subdomain for you.
 If you use hosting control panels go ahead and add a subdomain.
 if don't you have to do it manually.
-##Add a subdomin manually
+### Add a subdomin manually
 Example for adding `test` as subdomain to `http://www.example.com` in bind9.
 Forward:
 ```
