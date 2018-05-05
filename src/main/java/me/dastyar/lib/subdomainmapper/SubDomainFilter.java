@@ -58,9 +58,9 @@ public interface SubDomainFilter {
      * <strong>Note:</strong> You most call this method in
      * javax.servlet.Filter#doFilter() or in subclasses.</p>
      *
-     * @param request is the same as request (ServletRequest) in
+     * @param request is the same as ServletRequest in
      * javax.servlet.Filter#doFilter()<br/>
-     * @param response is the same as request (ServletRequest) in
+     * @param response is the same ServletRequest in
      * javax.servlet.Filter#doFilter()<br/>
      * @param domainParts is very important field and indicates parts of splitted
      * (on dot character) of domin name without <i>www</i><br/>
