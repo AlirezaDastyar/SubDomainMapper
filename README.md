@@ -19,9 +19,9 @@ Name parameter in `@SubDomain()` specify the subdomain name that you want to map
 For above example the `http://sub.example.com` will be mapped to the servlet.  
 **Note:** Using `@WebServlet()`with a valid value for `urlPatterns` is required.
 ### 3.Call `SubDomainFileter.filter()` in a filter class
-Parameter of `SubDomainFileter.filter(request,response,domainParts)`;  
-`request` is the same as request `ServletRequest` in `javax.servlet.Filter#doFilter()`.  
-`response` is the same as request `ServletResponse` in `javax.servlet.Filter#doFilter()`.  
+Parameter of `SubDomainFileter.filter(request,response,domainParts)`:  
+`request` is the same `ServletRequest` in `javax.servlet.Filter#doFilter()`.  
+`response` is the same `ServletResponse` in `javax.servlet.Filter#doFilter()`.  
 `domainParts` indicates parts of splitted (on dot character) of domin name without `www`.  
  For example:
 ```java
