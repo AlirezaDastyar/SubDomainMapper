@@ -1,6 +1,6 @@
 # SubDomainMapper
 ## What is it?
-SubDomainMapper is a simple library which allow to map a subdomain to a java servlet.  
+SubDomainMapper is a simple library which allow you to map a subdomain to a java servlet.  
 it is answer to "**how to map a subdomain to a servlet**".
 ## How to use it?
 ### 1.Add this project as jar file to your dependencies (or lib) directory
