@@ -52,9 +52,9 @@ Maven repository:
 ## Additional notes
 **This library do not create a subdomain for you.**  
 If you use hosting control panels go ahead and add a subdomain,  
-if don't you have to do it manually.
-### Add a subdomin manually
-Example for adding `test` as subdomain to `http://www.example.com` in bind9.  
+if you don't, you have to do it manually.
+### Add a subdomin manually in linux server
+Example for adding `test` as subdomain to `http://example.com` in bind9.  
 Forward:
 ```
 ;
